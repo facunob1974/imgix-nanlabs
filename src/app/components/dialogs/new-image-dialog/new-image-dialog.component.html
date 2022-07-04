@@ -1,0 +1,20 @@
+<div class="container">
+
+
+    <p class="title">Paste the image URL previously uploaded in Imgix and name</p>
+    <div class="container-text">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Url</mat-label>
+            <input matInput [(ngModel)]="data.url" maxlength="500" placeholder="Ex. https://assets.imgix.net/unsplash/alarmcloc....">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="data.name" maxlength="500" placeholder="Ex. House.jpg">
+        </mat-form-field>
+    </div>
+    <div class="container-button">
+        <button (click)="onAddClick()" mat-raised-button color="primary">Add</button>
+    </div>
+
+</div>
